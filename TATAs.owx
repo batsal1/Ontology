@@ -1,0 +1,822 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/3/untitled-ontology-16"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2025/3/untitled-ontology-16">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2025/3/untitled-ontology-16/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Brands"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Involvement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subsidiaries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#acquired"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#founded"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubsidiaries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvedInEvents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occuredAtLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#acquisitionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#birthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#businessNme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deathDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#establishmentDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fullName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locationName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air_India"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Automotive_Manufacturing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beverages"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Conglomerate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hirabai_Daboo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jaguar_Land_Rover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jimmy_Naval_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leah_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maya_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meherbai_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NatSteel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Navajbai_Sett"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Naval_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neville_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Noel_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Simone_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soonoo_Commissariat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steel_Manufacturing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Chemicals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Communication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Consultancy_Services"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Consumer_Products"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Elxsi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Motors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Motors_Passenger_Vehicles_Ltd."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Passenger_Electric_Mobility_Ltd."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Power"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Steel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Tea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_daewoo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_group"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tetley_Tea_Company"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https:www.isibang.ac.in/practice#hasParent"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Brands"/>
+        <Class IRI="#Business"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subsidiaries"/>
+        <Class IRI="#Business"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Air_India"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Automotive_Manufacturing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Beverages"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Conglomerate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Hirabai_Daboo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brands"/>
+        <NamedIndividual IRI="#Jaguar_Land_Rover"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subsidiaries"/>
+        <NamedIndividual IRI="#Jaguar_Land_Rover"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Jimmy_Naval_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Leah_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Maya_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Meherbai_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Navajbai_Sett"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Neville_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Simone_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Soonoo_Commissariat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Steel_Manufacturing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Chemicals"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Communication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Consultancy_Services"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Consumer_Products"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Elxsi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subsidiaries"/>
+        <NamedIndividual IRI="#Tata_Motors_Passenger_Vehicles_Ltd."/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subsidiaries"/>
+        <NamedIndividual IRI="#Tata_Passenger_Electric_Mobility_Ltd."/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Power"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Steel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Tea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subsidiaries"/>
+        <NamedIndividual IRI="#Tata_daewoo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_group"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brands"/>
+        <NamedIndividual IRI="#Tetley_Tea_Company"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+        <NamedIndividual IRI="#Tata_Steel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+        <NamedIndividual IRI="#Meherbai_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <NamedIndividual IRI="#Tata_group"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <NamedIndividual IRI="#Hirabai_Daboo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Meherbai_Tata"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#NatSteel"/>
+        <NamedIndividual IRI="#Steel_Manufacturing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Navajbai_Sett"/>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+        <NamedIndividual IRI="#Jimmy_Naval_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+        <NamedIndividual IRI="#Simone_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+        <NamedIndividual IRI="#Soonoo_Commissariat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+        <NamedIndividual IRI="#Leah_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+        <NamedIndividual IRI="#Maya_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+        <NamedIndividual IRI="#Neville_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https:www.isibang.ac.in/practice#hasParent"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+        <NamedIndividual IRI="#Air_India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https:www.isibang.ac.in/practice#hasParent"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+        <NamedIndividual IRI="#Navajbai_Sett"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https:www.isibang.ac.in/practice#hasParent"/>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasChild"/>
+        <NamedIndividual IRI="#Simone_Tata"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Simone_Tata"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <NamedIndividual IRI="#Tata_daewoo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubsidiaries"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <NamedIndividual IRI="#Jaguar_Land_Rover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubsidiaries"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <NamedIndividual IRI="#Tata_Motors_Passenger_Vehicles_Ltd."/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubsidiaries"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <NamedIndividual IRI="#Tata_Passenger_Electric_Mobility_Ltd."/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubsidiaries"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <NamedIndividual IRI="#Tata_daewoo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <NamedIndividual IRI="#Automotive_Manufacturing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Tata_Steel"/>
+        <NamedIndividual IRI="#NatSteel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Steel"/>
+        <NamedIndividual IRI="#Steel_Manufacturing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Tata_Tea"/>
+        <NamedIndividual IRI="#Tetley_Tea_Company"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Tea"/>
+        <NamedIndividual IRI="#Beverages"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_daewoo"/>
+        <NamedIndividual IRI="#Automotive_Manufacturing"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthDate"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+        <Literal>1859-08-27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deathDate"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+        <Literal>1932-06-03</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthDate"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+        <Literal>1904-07-29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deathDate"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+        <Literal>1993-11-29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+        <Literal>Jehangir Ratanji Dadabhoy Tata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthDate"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <Literal>1839-03-03</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deathDate"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <Literal>1904-05-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthDate"/>
+        <NamedIndividual IRI="#Jimmy_Naval_Tata"/>
+        <Literal>1945-05-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#Jimmy_Naval_Tata"/>
+        <Literal>Jimmy Naval Tata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acquisitionDate"/>
+        <NamedIndividual IRI="#NatSteel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthDate"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+        <Literal>1904-08-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deathDate"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+        <Literal>1989-05-05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#Naval_Tata"/>
+        <Literal>Naval Hormusji Tata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthDate"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+        <Literal>1957-08-05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#Noel_Tata"/>
+        <Literal>Noel Naval Tata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthDate"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+        <Literal>1937-12-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deathDate"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+        <Literal>2024-10-09</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+        <Literal>Ratan Naval Tata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#birthDate"/>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+        <Literal>1871-01-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deathDate"/>
+        <NamedIndividual IRI="#Ratanji_Tata"/>
+        <Literal>1918-09-05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#Simone_Tata"/>
+        <Literal>Simone Naval Tata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1945</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Steel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1907</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acquisitionDate"/>
+        <NamedIndividual IRI="#Tata_daewoo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_group"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1868</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acquisitionDate"/>
+        <NamedIndividual IRI="#Tetley_Tea_Company"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2000</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSibling"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#businessNme"/>
+        <Class IRI="#Business"/>
+    </DataPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Brands</IRI>
+        <Literal xml:lang="en">Brands under TATA group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Business</IRI>
+        <Literal xml:lang="en">Denotes companies and enterprises associated with the Tata Group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Event</IRI>
+        <Literal>Significant occurrences such as business establishments, acquisitions, or mergers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Involvement</IRI>
+        <Literal xml:lang="en">Categorizes the sector in which a business operates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Jamsetji_Nusserwani_Tata</IRI>
+        <Literal>Founder of the Tata Group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="en">Geographical places associated with businesses or events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal>Geographical places associated with businesses or events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tata_Motors</IRI>
+        <Literal>Initially founded as Tata Engineering and Locomotive Company (TELCO), focusing on locomotives and engineering products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tata_Steel</IRI>
+        <Literal>Originally established as Tata Iron and Steel Company (TISCO) in Sakchi, which later became Jamshedpur.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tata_daewoo</IRI>
+        <Literal xml:lang="en">South Korea&apos;s second-largest truck manufacturer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tata_group</IRI>
+        <Literal>The Tata Group is one of India&apos;s largest and most respected multinational conglomerates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#acquired</IRI>
+        <Literal xml:lang="en">Connects a business to another business it has acquired.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#acquisitionDate</IRI>
+        <Literal>Date when an acquisition took place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#birthDate</IRI>
+        <Literal xml:lang="en">Date of birth of the person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#businessNme</IRI>
+        <Literal xml:lang="en">Name of the business entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deathDate</IRI>
+        <Literal xml:lang="en">Date of death.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#establishmentDate</IRI>
+        <Literal xml:lang="en">Date when the business was founded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#founded</IRI>
+        <Literal xml:lang="en">Relates a person to the business(es) they established.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#fullName</IRI>
+        <Literal xml:lang="en">The complete name of an individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasChild</IRI>
+        <Literal xml:lang="en">Links a parent to their child.​</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSibling</IRI>
+        <Literal xml:lang="en">Siblings in TATA family</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSpouse</IRI>
+        <Literal xml:lang="en">Connects married individuals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSubsidiaries</IRI>
+        <Literal>subsidiaries of a business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#involvedInEvents</IRI>
+        <Literal xml:lang="en">Connects a person or business to an event they were part of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#locationName</IRI>
+        <Literal xml:lang="en">Name of the geographical location.​</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#occuredAtLocation</IRI>
+        <Literal xml:lang="en">Links an event to its geographical location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#operatesInIndustry</IRI>
+        <Literal xml:lang="en">Associates a business with its respective industry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https:www.isibang.ac.in/practice#hasParent</IRI>
+        <Literal>links child to parents</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
