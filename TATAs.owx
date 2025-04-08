@@ -13,13 +13,22 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#Acquired"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Brands"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Business"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Chairperson"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Headquaters"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Involvement"/>
@@ -43,6 +52,9 @@
         <ObjectProperty IRI="#hasChild"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasNephew"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasSibling"/>
     </Declaration>
     <Declaration>
@@ -59,6 +71,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#operatesInIndustry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https:www.isibang.ac.in/practice#hasParent"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#acquisitionDate"/>
@@ -91,13 +106,49 @@
         <NamedIndividual IRI="#Beverages"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Chemicals"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Conglomerate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Corus_Group"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cyrus_Mistry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Design_and_Technology_Services"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dorabji_Tata"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Electric_Utility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Engineering_and_Design"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FMCG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ginger"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Hirabai_Daboo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hospitality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IHCL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IT_and_Consultancy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Infinity_Retail"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#J.R.D._Tata"/>
@@ -124,6 +175,9 @@
         <NamedIndividual IRI="#NatSteel"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Natarajan_Chandrasekaran"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Navajbai_Sett"/>
     </Declaration>
     <Declaration>
@@ -136,10 +190,16 @@
         <NamedIndividual IRI="#Noel_Tata"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Nowroji_Saklatwala"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Ratan_Naval_Tata"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Ratanji_Tata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Retail"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Simone_Tata"/>
@@ -151,13 +211,22 @@
         <NamedIndividual IRI="#Steel_Manufacturing"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#TCS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taj_Hotels"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Airlines"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Tata_Chemicals"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Tata_Communication"/>
+        <NamedIndividual IRI="#Tata_Coffee"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Tata_Consultancy_Services"/>
+        <NamedIndividual IRI="#Tata_Communication"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Tata_Consumer_Products"/>
@@ -184,25 +253,65 @@
         <NamedIndividual IRI="#Tata_Tea"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Tata_Tech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tata_Teleservices"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Tata_daewoo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Tata_group"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Tata_sons"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Tetley_Tea_Company"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https:www.isibang.ac.in/practice#hasParent"/>
+        <NamedIndividual IRI="#Thelma_Vicaji"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Titan_Company"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tyco_Global_Network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vivanta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Voltas"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Acquired"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Brands"/>
         <Class IRI="#Business"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Chairperson"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Headquaters"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Subsidiaries"/>
         <Class IRI="#Business"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Acquired"/>
+        <NamedIndividual IRI="#Air_India"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Business"/>
         <NamedIndividual IRI="#Air_India"/>
@@ -216,20 +325,80 @@
         <NamedIndividual IRI="#Beverages"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Chemicals"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Business"/>
         <NamedIndividual IRI="#Conglomerate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acquired"/>
+        <NamedIndividual IRI="#Corus_Group"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chairperson"/>
+        <NamedIndividual IRI="#Cyrus_Mistry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Cyrus_Mistry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Design_and_Technology_Services"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chairperson"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Dorabji_Tata"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Electric_Utility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Engineering_and_Design"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#FMCG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brands"/>
+        <NamedIndividual IRI="#Ginger"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Hirabai_Daboo"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Hospitality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#IHCL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#IT_and_Consultancy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chairperson"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#J.R.D._Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acquired"/>
+        <NamedIndividual IRI="#Jaguar_Land_Rover"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Brands"/>
@@ -238,6 +407,10 @@
     <ClassAssertion>
         <Class IRI="#Subsidiaries"/>
         <NamedIndividual IRI="#Jaguar_Land_Rover"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chairperson"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
@@ -260,6 +433,22 @@
         <NamedIndividual IRI="#Meherbai_Tata"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Acquired"/>
+        <NamedIndividual IRI="#NatSteel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#NatSteel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chairperson"/>
+        <NamedIndividual IRI="#Natarajan_Chandrasekaran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Natarajan_Chandrasekaran"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Navajbai_Sett"/>
     </ClassAssertion>
@@ -276,12 +465,24 @@
         <NamedIndividual IRI="#Noel_Tata"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Chairperson"/>
+        <NamedIndividual IRI="#Nowroji_Saklatwala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chairperson"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Ratan_Naval_Tata"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
         <NamedIndividual IRI="#Ratanji_Tata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Involvement"/>
+        <NamedIndividual IRI="#Retail"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Person"/>
@@ -296,16 +497,28 @@
         <NamedIndividual IRI="#Steel_Manufacturing"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Brands"/>
+        <NamedIndividual IRI="#Taj_Hotels"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Airlines"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Business"/>
         <NamedIndividual IRI="#Tata_Chemicals"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Business"/>
+        <Class IRI="#Brands"/>
+        <NamedIndividual IRI="#Tata_Coffee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acquired"/>
         <NamedIndividual IRI="#Tata_Communication"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Business"/>
-        <NamedIndividual IRI="#Tata_Consultancy_Services"/>
+        <NamedIndividual IRI="#Tata_Communication"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Business"/>
@@ -340,6 +553,14 @@
         <NamedIndividual IRI="#Tata_Tea"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_Teleservices"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acquired"/>
+        <NamedIndividual IRI="#Tata_daewoo"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Subsidiaries"/>
         <NamedIndividual IRI="#Tata_daewoo"/>
     </ClassAssertion>
@@ -348,9 +569,59 @@
         <NamedIndividual IRI="#Tata_group"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Tata_sons"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acquired"/>
+        <NamedIndividual IRI="#Tetley_Tea_Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Brands"/>
         <NamedIndividual IRI="#Tetley_Tea_Company"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Thelma_Vicaji"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Titan_Company"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Business"/>
+        <NamedIndividual IRI="#Trent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acquired"/>
+        <NamedIndividual IRI="#Tyco_Global_Network"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subsidiaries"/>
+        <NamedIndividual IRI="#Tyco_Global_Network"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brands"/>
+        <NamedIndividual IRI="#Vivanta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Brands"/>
+        <NamedIndividual IRI="#Voltas"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Air_India"/>
+        <NamedIndividual IRI="#Tata_Airlines"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Corus_Group"/>
+        <NamedIndividual IRI="#Steel_Manufacturing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+        <NamedIndividual IRI="#Tata_Power"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#founded"/>
         <NamedIndividual IRI="#Dorabji_Tata"/>
@@ -362,9 +633,49 @@
         <NamedIndividual IRI="#Meherbai_Tata"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#IHCL"/>
+        <NamedIndividual IRI="#Hospitality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Infinity_Retail"/>
+        <NamedIndividual IRI="#Retail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+        <NamedIndividual IRI="#TCS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+        <NamedIndividual IRI="#Tata_Airlines"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#founded"/>
         <NamedIndividual IRI="#J.R.D._Tata"/>
         <NamedIndividual IRI="#Tata_Motors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+        <NamedIndividual IRI="#Titan_Company"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#J.R.D._Tata"/>
+        <NamedIndividual IRI="#Thelma_Vicaji"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <NamedIndividual IRI="#IHCL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <NamedIndividual IRI="#Taj_Hotels"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#founded"/>
@@ -380,6 +691,11 @@
         <ObjectProperty IRI="#hasChild"/>
         <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
         <NamedIndividual IRI="#Ratanji_Tata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNephew"/>
+        <NamedIndividual IRI="#Jamsetji_Nusserwani_Tata"/>
+        <NamedIndividual IRI="#Nowroji_Saklatwala"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSpouse"/>
@@ -452,6 +768,11 @@
         <NamedIndividual IRI="#Air_India"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Ratan_Naval_Tata"/>
+        <NamedIndividual IRI="#Jaguar_Land_Rover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https:www.isibang.ac.in/practice#hasParent"/>
         <NamedIndividual IRI="#Ratan_Naval_Tata"/>
         <NamedIndividual IRI="#Naval_Tata"/>
@@ -482,9 +803,44 @@
         <NamedIndividual IRI="#Naval_Tata"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#TCS"/>
+        <NamedIndividual IRI="#IT_and_Consultancy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Chemicals"/>
+        <NamedIndividual IRI="#Chemicals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Coffee"/>
+        <NamedIndividual IRI="#FMCG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Tata_Communication"/>
+        <NamedIndividual IRI="#Tyco_Global_Network"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Consumer_Products"/>
+        <NamedIndividual IRI="#FMCG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Elxsi"/>
+        <NamedIndividual IRI="#Design_and_Technology_Services"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#acquired"/>
         <NamedIndividual IRI="#Tata_Motors"/>
         <NamedIndividual IRI="#Tata_daewoo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <NamedIndividual IRI="#Tata_Tech"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSubsidiaries"/>
@@ -512,6 +868,16 @@
         <NamedIndividual IRI="#Automotive_Manufacturing"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Power"/>
+        <NamedIndividual IRI="#Electric_Utility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Tata_Steel"/>
+        <NamedIndividual IRI="#Corus_Group"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#acquired"/>
         <NamedIndividual IRI="#Tata_Steel"/>
         <NamedIndividual IRI="#NatSteel"/>
@@ -533,9 +899,69 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tata_Tech"/>
+        <NamedIndividual IRI="#Engineering_and_Design"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
         <NamedIndividual IRI="#Tata_daewoo"/>
         <NamedIndividual IRI="#Automotive_Manufacturing"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Tata_group"/>
+        <NamedIndividual IRI="#Tata_Communication"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acquired"/>
+        <NamedIndividual IRI="#Tata_group"/>
+        <NamedIndividual IRI="#Tata_Elxsi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Tata_group"/>
+        <NamedIndividual IRI="#Tata_Chemicals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Tata_group"/>
+        <NamedIndividual IRI="#Tata_Coffee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Tata_group"/>
+        <NamedIndividual IRI="#Tata_Consumer_Products"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Tata_group"/>
+        <NamedIndividual IRI="#Tata_Power"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#founded"/>
+        <NamedIndividual IRI="#Tata_sons"/>
+        <NamedIndividual IRI="#TCS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Tetley_Tea_Company"/>
+        <NamedIndividual IRI="#FMCG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operatesInIndustry"/>
+        <NamedIndividual IRI="#Vivanta"/>
+        <NamedIndividual IRI="#Hospitality"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acquisitionDate"/>
+        <NamedIndividual IRI="#Air_India"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acquisitionDate"/>
+        <NamedIndividual IRI="#Corus_Group"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2007</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#birthDate"/>
         <NamedIndividual IRI="#Dorabji_Tata"/>
@@ -545,6 +971,26 @@
         <DataProperty IRI="#deathDate"/>
         <NamedIndividual IRI="#Dorabji_Tata"/>
         <Literal>1932-06-03</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#Dorabji_Tata"/>
+        <Literal xml:lang="en">Dorabji Jamsetji Tata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#FMCG"/>
+        <Literal>Fast-Moving Consumer Goods</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#IHCL"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1903</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#IHCL"/>
+        <Literal>Mumbai</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#birthDate"/>
@@ -643,13 +1089,123 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#TCS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1968</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#TCS"/>
+        <Literal>Tata Consultancy Services</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#TCS"/>
+        <Literal>Mumbai</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Airlines"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1932</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Chemicals"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1939</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Tata_Chemicals"/>
+        <Literal>Mumbai</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Coffee"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1922</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Tata_Coffee"/>
+        <Literal>Kodagu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acquisitionDate"/>
+        <NamedIndividual IRI="#Tata_Communication"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Communication"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1986</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Consumer_Products"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1964</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Tata_Consumer_Products"/>
+        <Literal>Kolkata</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Elxsi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1989</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Tata_Elxsi"/>
+        <Literal>Bangalore</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
         <NamedIndividual IRI="#Tata_Motors"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1945</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Tata_Motors"/>
+        <Literal>Mumbai</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Power"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1911</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Tata_Power"/>
+        <Literal>Mumbai</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#establishmentDate"/>
         <NamedIndividual IRI="#Tata_Steel"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1907</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Tata_Steel"/>
+        <Literal>Mumbai</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Tech"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1989</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#Tata_Tech"/>
+        <Literal>TATA Technologies</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationName"/>
+        <NamedIndividual IRI="#Tata_Tech"/>
+        <Literal>Pune</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#establishmentDate"/>
+        <NamedIndividual IRI="#Tata_Teleservices"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1996</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#acquisitionDate"/>
@@ -665,6 +1221,11 @@
         <DataProperty IRI="#acquisitionDate"/>
         <NamedIndividual IRI="#Tetley_Tea_Company"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acquisitionDate"/>
+        <NamedIndividual IRI="#Tyco_Global_Network"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2005</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSibling"/>
@@ -773,6 +1334,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasChild</IRI>
         <Literal xml:lang="en">Links a parent to their child.​</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNephew</IRI>
+        <Literal>links a relation of uncle-nephew</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
